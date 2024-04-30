@@ -74,9 +74,9 @@ public class MaximumConsequtiveCharacters {
             if (i - j + 1 > maxLength){
                 maxLength = Math.max(maxLength, i-j+1);
                 ans.clear();
-                ans.add(String.valueOf(lastChar).repeat(i-j+1));
+         //       ans.add(String.valueOf(lastChar).repeat(i-j+1)); //TODO:: Always uncomment the commented and use java 11 and above
             }else if(i - j + 1 == maxLength){
-                ans.add(String.valueOf(lastChar).repeat(i-j+1));
+           //     ans.add(String.valueOf(lastChar).repeat(i-j+1));
             }
             lastChar = s.charAt(i);
             j = i+1;
@@ -84,9 +84,9 @@ public class MaximumConsequtiveCharacters {
         if (s.length() - j + 1 > maxLength){
             maxLength = Math.max(maxLength, s.length()-j+1);
             ans.clear();
-            ans.add(String.valueOf(lastChar).repeat(s.length()-j+1));
+           // ans.add(String.valueOf(lastChar).repeat(s.length()-j+1));
         }else if(s.length() - j + 1 == maxLength){
-            ans.add(String.valueOf(lastChar).repeat(s.length()-j+1));
+           // ans.add(String.valueOf(lastChar).repeat(s.length()-j+1));
         }
         return ans;
     }

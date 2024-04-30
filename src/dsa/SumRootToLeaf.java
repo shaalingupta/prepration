@@ -42,10 +42,25 @@ package dsa;
  */
 
 public class SumRootToLeaf {
-
-
+    int sum = 0;
     public int sumNumbers(TreeNode root) {
-        return 0;
+        getSum(root, 0);
+        return sum;
+    }
+
+    private void getSum(TreeNode root, int n){
+        if(root == null){
+            return;
+        }
+
+        n = n*10 + root.val;
+
+        if (root.left == null && root.right==null){
+            sum += n;
+        }
+
+        getSum(root.left, n);
+        getSum(root.right, n);
     }
 
 }
