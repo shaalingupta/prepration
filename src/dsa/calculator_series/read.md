@@ -5,6 +5,10 @@ So far, we have encountered the following series of calculator problems:
 772. Basic Calculator III
 770. Basic Calculator IV
 
+Go through polish notation, reverse polish notion, expression tree, first
+
+//https://leetcode.com/u/fun4LeetCode/ iss bande k solutions ache h
+
 Though each of them may be solved using different methodologies, in this post I'd like to sort out the complexities and develop one "generic" solution to help us approach these problems.
 
 Note that this post is NOT intended to deal with general calculator problems that involve complicated operands/operators. The analyses below are limited to the scope as specified by the problem descriptions of the above four problems.
